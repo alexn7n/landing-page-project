@@ -1,5 +1,5 @@
 
-/* Global styles */
+/* global styles */
 
 * {
     box-sizing: border-box;
@@ -12,59 +12,135 @@
 body {
     font-family: "Roboto", sans-serif;
     font-style: normal;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    line-height: 1.5;
+    color: #1F2937;
 }
 
-/* Navigation styles */
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* text styles */
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h1, 
+h2 {
+    line-height: 1;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+
+/* button styles */
+
+button {
+    padding: 12px 35px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    border-radius: 8px;
+}
+
+button.primary {
+    background-color: #3882F6;
+    border: 1px solid #3882F6;
+    color: #F9FAF8;
+}
+
+/* navigation styles */
 
 nav {
     background-color: #1F2937;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav ul {
-    width: 1024px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    gap: 2rem;
+    height: 68px;
 }
 
 nav a {
     color: #F9FAF8;
+    font-size: 18px;
 }
 
-nav ul :nth-child(2) {
-    margin-left: auto;
-}
-
-.header-logo {
+nav .container .logo a {
     font-size: 24px;
     font-weight: 900;
 }
 
-/* Hero styles */
-
-.hero {
-    background-color: #1F2937;
-    color: #F9FAF8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero .container {
-    width: 1024px;
+nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    gap: 24px;
+    height: 100%;
 }
+
+nav .container ul {
+    display: flex;
+    gap: 2rem;
+}
+
+/* header styles */
+
+.header {
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+.header .image {
+    max-width: 524px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding-top: 100px;
+    padding-bottom: 132px;
+}
+
+.header .content p {
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+/* cards styles */
+
+.highlights {
+    background-color: #F9FAF8;
+    color: #1F2937;
+}
+
+.highlights .container {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 120px; 
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 50px;
+}
+
+.card {
+    display: flex;
+    flex-basis: 168px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.card img {
+    border-radius: 16px;
+    border: 4px solid #3882F6;
+    margin-bottom: 8px;
+}
+
+/* quote styles */

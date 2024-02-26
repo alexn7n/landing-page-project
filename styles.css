@@ -91,10 +91,6 @@ nav .container ul {
     color: #F9FAF8;
 }
 
-.header .image {
-    max-width: 524px;
-}
-
 .header .container {
     display: flex;
     justify-content: space-between;
@@ -109,14 +105,15 @@ nav .container ul {
     margin-bottom: 1rem;
 }
 
+.header .image {
+    max-width: 524px;
+}
+
 /* cards styles */
 
 .highlights {
     background-color: #F9FAF8;
     color: #1F2937;
-}
-
-.highlights .container {
     text-align: center;
     padding-top: 60px;
     padding-bottom: 120px; 
@@ -149,9 +146,6 @@ nav .container ul {
 .quote {
     background-color: #E5E7Eb;
     color: #1F2937;
-}
-
-.quote .container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,6 +156,7 @@ nav .container ul {
 .quote blockquote {
     font-size: 36px;
     font-weight: 300;
+    line-height: 1.2;
     font-style: italic;
     max-width: 800px;
     display: flex;
@@ -170,7 +165,9 @@ nav .container ul {
 
 blockquote footer {
     margin-left: auto;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 900;
     font-style: normal;
 }
+
+

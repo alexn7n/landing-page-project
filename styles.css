@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-style: normal;
 }
 
 body {
@@ -31,8 +32,13 @@ h2 {
     font-size: 36px;
 }
 
+h3 {
+    font-size: 24px;
+}
+
 h1, 
-h2 {
+h2,
+h3 {
     line-height: 1;
     font-weight: 900;
     margin-bottom: 1rem;
@@ -47,12 +53,18 @@ button {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     border-radius: 8px;
+    color: #F9FAF8;
+    border: 2px solid;
 }
 
 button.primary {
     background-color: #3882F6;
-    border: 1px solid #3882F6;
-    color: #F9FAF8;
+    border-color: #3882F6;
+}
+
+button.secondary {
+    background-color: #3882F6;
+    border: color: #F9FAF8;
 }
 
 /* navigation styles */
@@ -60,16 +72,6 @@ button.primary {
 nav {
     background-color: #1F2937;
     height: 68px;
-}
-
-nav a {
-    color: #F9FAF8;
-    font-size: 18px;
-}
-
-nav .container .logo a {
-    font-size: 24px;
-    font-weight: 900;
 }
 
 nav .container {
@@ -83,6 +85,17 @@ nav .container ul {
     display: flex;
     gap: 2rem;
 }
+
+nav a {
+    color: #F9FAF8;
+    font-size: 18px;
+}
+
+nav .container .logo a {
+    font-size: 24px;
+    font-weight: 900;
+}
+
 
 /* header styles */
 
@@ -153,7 +166,7 @@ nav .container ul {
     padding-bottom: 134px;
 }
 
-.quote blockquote {
+.quote .container {
     font-size: 36px;
     font-weight: 300;
     line-height: 1.2;
@@ -170,4 +183,30 @@ blockquote footer {
     font-style: normal;
 }
 
+/* banner styles */
 
+.cta-banner {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.cta-banner .container {
+    background-color: #3882F6;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 1024px;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    padding: 55px 120px;
+    border-radius: 8px;
+}
+
+.cta-banner p {
+    font-size: 18px;
+}

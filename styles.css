@@ -181,7 +181,7 @@ blockquote p {
     font-style: italic;
 }
 
-blockquote footer {
+.quote-footer {
     font-size: 20px;
     font-weight: 900;
     font-style: normal;
@@ -212,3 +212,14 @@ blockquote footer {
 }
 
 /* footer styles */
+
+.page-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1F2937;
+    color:  #E5E7Eb;
+    height: 100px;
+    font-size: 18px;
+}

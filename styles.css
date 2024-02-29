@@ -22,7 +22,7 @@ body {
     margin: 0 auto;
 }
 
-/* text styles */
+/* heading styles */
 
 h1 {
     font-size: 48px;
@@ -55,56 +55,56 @@ button {
     border-radius: 8px;
     color: #F9FAF8;
     border: 2px solid;
+    background-color: #3882F6;
 }
 
 button.primary {
-    background-color: #3882F6;
     border-color: #3882F6;
 }
 
 button.secondary {
-    background-color: #3882F6;
-    border: color: #F9FAF8;
+    border-color: #F9FAF8;
 }
 
-/* navigation styles */
+/* header styles */
 
-nav {
+header {
     background-color: #1F2937;
     height: 68px;
 }
 
-nav .container {
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
 }
 
-nav .container ul {
+/* nav styles */
+
+nav ul {
     display: flex;
     gap: 2rem;
 }
 
-nav a {
+header a {
     color: #F9FAF8;
     font-size: 18px;
 }
 
-nav .container .logo a {
+.logo a {
     font-size: 24px;
     font-weight: 900;
 }
 
+/* section hero styles */
 
-/* header styles */
-
-.header {
+.hero {
     background-color: #1F2937;
     color: #F9FAF8;
 }
 
-.header .container {
+.hero .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -113,20 +113,23 @@ nav .container .logo a {
     padding-bottom: 132px;
 }
 
-.header .content p {
+.hero-content p {
     font-size: 18px;
     margin-bottom: 1rem;
 }
 
-.header .image {
+.hero .image {
     max-width: 524px;
 }
 
-/* cards styles */
+/* section highlights styles */
 
 .highlights {
     background-color: #F9FAF8;
     color: #1F2937;
+}
+
+.highlights .container {
     text-align: center;
     padding-top: 60px;
     padding-bottom: 120px; 
@@ -154,44 +157,41 @@ nav .container .logo a {
     margin-bottom: 8px;
 }
 
-/* quote styles */
+.card p {
+    font-size: 18px;;
+}
+
+/* section quote styles */
 
 .quote {
     background-color: #E5E7Eb;
     color: #1F2937;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.quote .container {
+    max-width: 800px;
     padding-top: 134px;
     padding-bottom: 134px;
 }
 
-.quote .container {
+blockquote p {
     font-size: 36px;
     font-weight: 300;
     line-height: 1.2;
     font-style: italic;
-    max-width: 800px;
-    display: flex;
-    flex-direction: column;
 }
 
 blockquote footer {
-    margin-left: auto;
     font-size: 20px;
     font-weight: 900;
     font-style: normal;
+    text-align: right;
 }
 
-/* banner styles */
+/* section banner styles */
 
 .cta-banner {
     background-color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 
 .cta-banner .container {
@@ -199,14 +199,16 @@ blockquote footer {
     color: white;
     display: flex;
     flex-wrap: wrap;
-    flex: 1 1 1024px;
     justify-content: space-between;
-    gap: 1rem;
     align-items: center;
+    gap: 1rem;
     padding: 55px 120px;
+    margin: 100px auto;
     border-radius: 8px;
 }
 
 .cta-banner p {
     font-size: 18px;
 }
+
+/* footer styles */
